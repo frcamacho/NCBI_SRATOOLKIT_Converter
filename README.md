@@ -6,6 +6,7 @@
 ####+Requirements: 
 
 1. NCBI SRA TOOLKIT (http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=show&f=software&m=software&s=software)
+2. A basic knoweledge of NCBI SRA TOOLKIT
 
 ----------------------------------------------------------------------
 
