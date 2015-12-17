@@ -27,12 +27,9 @@ def FastqToFasta(path):
 
 		else: 
 
-		# cmd = "fq2fa --merge --filter " + fastq_filename + " "+ SRR_name # if the forward and reverse reads are combined in one fastq file 
-		
-		# print cmd
 			SRR_list.append(SRR_name)
-
-			cmd = "fq2fa --merge --filter " + SRR_name +"_1.fastq " + SRR_name +"_2.fastq " + SRR_name + ".fa" #fastq files are split into two files so we need to merge them to create a fasta file. 
+			#fastq files are split into two files so we need to merge them to create a fasta file. 
+			cmd = "fq2fa --merge --filter " + SRR_name +"_1.fastq " + SRR_name +"_2.fastq " + SRR_name + ".fa" 
 
 			print cmd
 
