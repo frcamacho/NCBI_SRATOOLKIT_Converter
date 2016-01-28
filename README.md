@@ -26,14 +26,16 @@ bar from the SRA locater website
 2. The second step is to convert SRA data into fastq format. Run the 
 'SRA_fastq.py' script in the directory with the following parameters:
 
-python  ./SRA_fastq.py SRR_ACC_LIST OUT_FASTQ_FILES_DIR 
+python ./SRA_fastq.py --sra_dir_path DATA_PATH --sra_dir_folder SRA_FOLDER --outdir_path OUTPATH --outdir_folder OUTDIR_FOLDER 
 
-SRR_ACC_LIST: file with SRR accession numbers (if file is in 
-			  another directory just use the 
-			  path to the file)
+DATA_PATH: The root directory path to where SRA folder is contained
+			  
+SRA_FOLDER: Name of directory which contains SRA files 
 
-OUT_FASTQ_FILES_DIR: directory where to store the converted 
-		          fastq files 
+OUTPATH: Directory path where you want to output OUTDIR_FOLDER 
+
+OUTDIR_FOLDER: Name of directory you want to make to contain the
+		convert sra files which are now in FASTQ format 
 
 
 3. The third step is to take the the fastq files and convert to 
