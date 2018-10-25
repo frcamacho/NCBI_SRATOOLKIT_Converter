@@ -17,8 +17,6 @@ def FastqToFasta(path):
 	SRR_list =[]
 
 	for fastq_files in os.listdir(path):
-
-		
 		base = fastq_files.split("_")
 		SRR_name = base[0]
 		
@@ -35,25 +33,8 @@ def FastqToFasta(path):
 
 			subprocess.call(cmd, shell=True)
 
-
-
-
 if __name__ == '__main__':
 
 	FASTQSOURCE = sys.argv[1]
-
-	#"/molbio2/labs/donialab/fcamacho/fastq_files/"
 	
 	FastqToFasta(FASTQSOURCE)
-
-
-
-
-
-
-
-
-
-
-
-
